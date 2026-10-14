@@ -3180,3 +3180,72 @@ dtype: int64}]))),
 2026-10-14 13:56:09,165:INFO:save_model() successfully completed......................................
 2026-10-14 13:56:12,410:INFO:Initializing load_model()
 2026-10-14 13:56:12,410:INFO:load_model(model_name=welcome_survey_simple_v2_pipeline, platform=None, authentication=None, verbose=True)
+2026-10-14 13:59:09,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-14 13:59:09,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-14 13:59:09,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-14 13:59:09,541:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2026-10-14 13:59:18,469:INFO:Initializing load_model()
+2026-10-14 13:59:18,469:INFO:load_model(model_name=welcome_survey_simple_v2_pipeline, platform=None, authentication=None, verbose=True)
+2026-10-14 13:59:18,535:WARNING:C:\Users\patry\miniconda3\envs\od_zera_do_ai\lib\site-packages\_distutils_hack\__init__.py:30: UserWarning: Setuptools is replacing distutils. Support for replacing an already imported distutils is deprecated. In the future, this condition will fail. Register concerns at https://github.com/pypa/setuptools/issues/new?template=distutils-deprecation.yml
+  warnings.warn(
+
+2026-10-14 13:59:19,012:INFO:Initializing predict_model()
+2026-10-14 13:59:19,012:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000205FC6E7A30>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mê¿czyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=111))]), ml_usecase=None)
+2026-10-14 13:59:19,012:INFO:Set up data.
+2026-10-14 13:59:20,066:INFO:Initializing predict_model()
+2026-10-14 13:59:20,066:INFO:predict_model(self=<pycaret.clustering.oop.ClusteringExperiment object at 0x00000205FC93A9E0>, estimator=Pipeline(memory=Memory(location=None),
+         steps=[('numerical_imputer',
+                 TransformerWrapper(include=[], transformer=SimpleImputer())),
+                ('categorical_imputer',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place', 'gender'],
+                                    transformer=SimpleImputer(strategy='most_frequent'))),
+                ('ordinal_encoding',
+                 TransformerWrapper(include=['gender'],
+                                    transfo...
+                                                               mapping=[{'col': 'gender',
+                                                                         'data_type': dtype('O'),
+                                                                         'mapping': Kobieta      0
+Mê¿czyzna    1
+NaN         -1
+dtype: int64}]))),
+                ('onehot_encoding',
+                 TransformerWrapper(include=['age', 'edu_level', 'fav_animals',
+                                             'fav_place'],
+                                    transformer=OneHotEncoder(cols=['age',
+                                                                    'edu_level',
+                                                                    'fav_animals',
+                                                                    'fav_place'],
+                                                              handle_missing='return_nan',
+                                                              use_cat_names=True))),
+                ('trained_model', KMeans(random_state=111))]), ml_usecase=None)
+2026-10-14 13:59:20,066:INFO:Set up data.
